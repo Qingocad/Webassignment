@@ -1,0 +1,357 @@
+/* homepage */
+body { 
+    background-color: #ffffff; 
+    color: #e51caf; /* White text */
+    font-family: 'Gothic A1', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bodyHeader {
+    background-color: #ff5ecc; 
+}
+
+header h1 {
+    font-family: 'Cinzel', serif; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #ff5ecc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.headerList {
+    padding-top: 0;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ff5ecc;
+    color: #fff;
+}
+
+
+.headerList a {
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.headerList a:hover {
+    background-color: #fff;
+    color: #ff5ecc;
+    padding: 30px;
+
+    transition: padding 0.5s ease-in-out;
+}
+
+#main-title {
+    font-family: "blonde-fraktur", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 80px;
+    letter-spacing: 2px;
+
+    margin-bottom: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#main-title:hover {
+    filter: drop-shadow(0 0 8px #ff5ecc);
+    transition: all 0.5s ease-in-out;
+
+}
+
+#backgroundImage {
+    z-index: -2;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 30vh;
+
+    object-fit: cover;
+    filter: blur(1px);
+
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.blackBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%; /* Full width */
+    height: 250px;
+
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
+/* other stylesheet defaultpage*/
+
+.defaultPage p {
+    font-size: 15px;
+    color: black;
+    text-align: left; 
+    justify-content: space-between;
+    width: 85%; /* Adjust the width as needed */
+    margin: 0 auto; /* This will center your paragraph block in the middle of the page */
+    max-width: 800px; /* Optional: if you want to set a maximum width for wider screens */
+    line-height: 1.6; /* This is a common line-height value for readability */
+
+}
+
+
+.defaultPage h1, .defaultPage h2 {
+    text-align: center;
+    color: #333;
+}
+
+.defaultPage h3 {
+    color: black;
+}
+
+.video-container {
+    text-align: center; /* Center the video */
+    margin: 60px 0; /* Add some vertical spacing around the video */
+}
+
+.video-container video {
+    max-width: 80%; /* Make sure the video is responsive and doesn't overflow the screen */
+    height: auto; /* Maintain the aspect ratio of the video */
+}
+
+/*imagegallery setting*/
+.image-gallery {
+    display: flex;
+    justify-content: space-around; /* This will space out your images evenly */
+    align-items: flex-start; /* Align items from the top */
+    flex-wrap: wrap; /* This allows items to wrap onto the next line if needed */
+}
+
+
+figure.Sanrio {
+    flex-basis: 50%; /* Each item will take equal space */
+    margin: 10px; /* Spacing between items */
+    
+    box-sizing: border-box;
+}
+
+
+figure.otomekei {
+    flex-basis: 50%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+  
+    box-sizing: border-box;
+}
+
+figure.milkdress {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+  
+    box-sizing: border-box;
+
+}
+
+.Sanrio img{
+    display: block; /* Remove default inline spacing */
+    max-width: 80%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.otomekei img{
+    display: block; /* Remove default inline spacing */
+    max-width: 80%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.milkdress img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+figcaption {
+    text-align: center; /* Center-align the caption */
+    color: #ff5ecc; /* Set the text color for the caption */
+    font-style: italic; /* Italicize the text */
+    padding: 5px 0; /* Add some padding above and below the caption */
+    box-sizing: border-box; 
+
+}
+
+figure.babyshop {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+.babyshop img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figure.metamorphose {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.metamorphose img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figure.malicemizer {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.malicemizer img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figure.glbmagazine {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.glbmagazine img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figure.fruits {
+    flex-basis: 70%; /* Adjust this percentage based on your second image size */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.fruits img{
+    display: block; /* Remove default inline spacing */
+    max-width: 50%; /* Make the image responsive and ensure it's not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+/*styleintro page*/
+
+.subsection .block {
+    display: block;
+    background-color: #f2f2f2;
+    color: #ff5ecc;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.subsection .block:hover {
+    background-color: #ddd;
+}
+
+.gallery-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+}
+
+.section a {
+    color: white;
+    font-size: 24px; /* Adjust the font size as needed */
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+
